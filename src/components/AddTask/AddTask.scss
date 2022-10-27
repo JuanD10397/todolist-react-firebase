@@ -1,0 +1,42 @@
+.add-task {
+    border-top: 1px solid #dadada;
+
+    input {
+        border: 0 !important;
+        width: 90%;
+        height: 60px;
+        padding: 20px 50px;
+        font-size: 20px;
+        
+
+        &:focus {
+            outline: none; //Hace que cuando me coloque en el campo de texto no aparezca el borde azul
+        }
+    }
+
+    button {
+        position: absolute;
+        //top: 0;
+        //right: 10px;
+        //height: 100%
+        //background-color: transparent;
+        background-color: #fff;
+        border: 0;
+        height: 60px;
+        border-radius: 0;
+        border-bottom-right-radius: 15px;
+
+        &:hover, 
+        &:active,
+        &:focus {
+            background-color: #fff !important;
+            box-shadow: none !important;
+        }
+
+        
+        svg {
+            fill: #bdbdbd;
+            width: 20px;
+        }
+    }
+}

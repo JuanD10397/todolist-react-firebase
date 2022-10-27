@@ -1,0 +1,77 @@
+.task {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dadada;
+
+    &:last-of-type {
+        border-bottom: 0;
+    }
+
+    div {
+
+        svg {
+            width: 22px;
+            fill: #bdbdbd;
+        }
+
+        &:nth-child(1) {    //Primer hijo (children) del div. Osea el Check
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #dadada;
+            height: 70px;
+            width: 70px;
+
+            .completed {
+                
+                fill: #45da03;
+                
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: #45da03;
+
+                svg {
+                    fill: #fff;
+                }
+            }
+
+            
+
+            
+
+        }
+
+        &:nth-child(2) { // Segundo hijo del div, Osea el Nombre de la Tarea
+            padding-left: 30px;
+        }
+
+        &:nth-child(3) { // Tercer hijo, es la X
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            /* // Esto lo pone en el video
+            position: absolute;
+            right: 20px;
+            */
+            
+
+             // Esto lo coloco yo
+            border-left: 1px solid #dadada;
+            height: 70px;
+            width: 70px;
+            margin-left: 350px;
+            
+            
+
+            &:hover {
+                cursor: pointer;
+                svg {
+                    fill: #e20000;
+                }
+            }
+        }
+    }
+}
